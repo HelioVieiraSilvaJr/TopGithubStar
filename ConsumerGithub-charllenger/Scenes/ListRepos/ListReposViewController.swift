@@ -17,6 +17,8 @@ final class ListReposViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView! {
         didSet{
             tableView.dataSource = self
+            tableView.delegate = self
+            tableView.register(UINib(nibName: RepoCell.identifier, bundle: nil), forCellReuseIdentifier: RepoCell.identifier)
         }
     }
     
@@ -25,6 +27,7 @@ final class ListReposViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bindEvents()
         viewModel.fetchRepos()
     }
     
@@ -46,9 +49,24 @@ extension ListReposViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RepoCell.identifier) as? RepoCell else {
+            return UITableViewCell()
+        }
         let repo = viewModel.repos[indexPath.row]
-        print("==> REPO: \(repo)")
+        cell.configure(with: repo)
+        return cell
+    }
+}
+
+extension ListReposViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
-        return UITableViewCell()
+        guard indexPath.row > 0 else {return}
+        
+        let indexNeedFetchNewRepos = viewModel.repos.count - 1
+        
+        if indexPath.row >= indexNeedFetchNewRepos {
+            viewModel.fetchRepos()
+        }
     }
 }

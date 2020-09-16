@@ -43,6 +43,7 @@ final class ListReposService {
         guard let url = URL(string: "\(baseUrl)/search/repositories?q=language:swift&sort=stars&per_page=20&page=\(pagination)") else {
             return onComplete(.failure(.badURL))
         }
+        print("Resquet URL: \(url.absoluteString)")
         
         let session = URLSession(configuration: ListReposService.configuration)
         

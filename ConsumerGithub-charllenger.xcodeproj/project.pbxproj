@@ -18,6 +18,8 @@
 		BD829CE42512749F00499A52 /* ListReposService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CE32512749F00499A52 /* ListReposService.swift */; };
 		BD829CE7251276AA00499A52 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CE6251276AA00499A52 /* UIViewController+Extensions.swift */; };
 		BD829CE9251285D700499A52 /* ListReposResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CE8251285D700499A52 /* ListReposResponse.swift */; };
+		BD829CED251295C100499A52 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CEB251295C100499A52 /* RepoCell.swift */; };
+		BD829CEE251295C100499A52 /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD829CEC251295C100499A52 /* RepoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		BD829CE32512749F00499A52 /* ListReposService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposService.swift; sourceTree = "<group>"; };
 		BD829CE6251276AA00499A52 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		BD829CE8251285D700499A52 /* ListReposResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposResponse.swift; sourceTree = "<group>"; };
+		BD829CEB251295C100499A52 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		BD829CEC251295C100499A52 /* RepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 			children = (
 				BD829CE02512729800499A52 /* Service */,
 				BD829CDF2512729400499A52 /* Model */,
+				BD829CEA2512959600499A52 /* View */,
 				BD829CDD2512728E00499A52 /* ListReposViewModel.swift */,
 				BD829CD92512727400499A52 /* ListReposViewController.swift */,
 				BD829CDB2512727E00499A52 /* ListReposViewController.storyboard */,
@@ -144,6 +149,15 @@
 				BD829CE6251276AA00499A52 /* UIViewController+Extensions.swift */,
 			);
 			path = Exetensions;
+			sourceTree = "<group>";
+		};
+		BD829CEA2512959600499A52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD829CEB251295C100499A52 /* RepoCell.swift */,
+				BD829CEC251295C100499A52 /* RepoCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD829CCD25126FB000499A52 /* LaunchScreen.storyboard in Resources */,
+				BD829CEE251295C100499A52 /* RepoCell.xib in Resources */,
 				BD829CDC2512727E00499A52 /* ListReposViewController.storyboard in Resources */,
 				BD829CCA25126FB000499A52 /* Assets.xcassets in Resources */,
 				BD829CC825126FAC00499A52 /* Main.storyboard in Resources */,
@@ -225,6 +240,7 @@
 				BD829CE22512737600499A52 /* Repo.swift in Sources */,
 				BD829CE7251276AA00499A52 /* UIViewController+Extensions.swift in Sources */,
 				BD829CE42512749F00499A52 /* ListReposService.swift in Sources */,
+				BD829CED251295C100499A52 /* RepoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
