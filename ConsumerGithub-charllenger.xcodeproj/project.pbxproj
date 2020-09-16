@@ -52,13 +52,45 @@
 		BD829CBF25126FAC00499A52 /* ConsumerGithub-charllenger */ = {
 			isa = PBXGroup;
 			children = (
+				BD829CD72512714E00499A52 /* Commons */,
+				BD829CD62512714800499A52 /* Scenes */,
+				BD829CD42512713D00499A52 /* Sources */,
+				BD829CD52512714200499A52 /* Resources */,
+			);
+			path = "ConsumerGithub-charllenger";
+			sourceTree = "<group>";
+		};
+		BD829CD42512713D00499A52 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
 				BD829CC025126FAC00499A52 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BD829CD52512714200499A52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD829CCE25126FB000499A52 /* Info.plist */,
 				BD829CC625126FAC00499A52 /* Main.storyboard */,
 				BD829CC925126FB000499A52 /* Assets.xcassets */,
 				BD829CCB25126FB000499A52 /* LaunchScreen.storyboard */,
-				BD829CCE25126FB000499A52 /* Info.plist */,
 			);
-			path = "ConsumerGithub-charllenger";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BD829CD62512714800499A52 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BD829CD72512714E00499A52 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TJZ8USWMCJ;
-				INFOPLIST_FILE = "ConsumerGithub-charllenger/Info.plist";
+				INFOPLIST_FILE = "ConsumerGithub-charllenger/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,7 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TJZ8USWMCJ;
-				INFOPLIST_FILE = "ConsumerGithub-charllenger/Info.plist";
+				INFOPLIST_FILE = "ConsumerGithub-charllenger/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
