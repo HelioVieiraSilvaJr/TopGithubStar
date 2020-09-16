@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let viewController = ListReposViewController().instantiate() as! ListReposViewController
-        window?.rootViewController = viewController
+        let navController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
         
         return true
