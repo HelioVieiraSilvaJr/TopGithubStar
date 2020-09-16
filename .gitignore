@@ -3,3 +3,4 @@ UserInterfaceState.xcuserstate
 
 Pods/
 Podfile.lock
+*.xcbkptlist
