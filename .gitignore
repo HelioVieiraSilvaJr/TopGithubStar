@@ -1,2 +1,6 @@
 .DS_Store
 UserInterfaceState.xcuserstate
+
+Pods/
+Podfile.lock
+*.xcbkptlist
