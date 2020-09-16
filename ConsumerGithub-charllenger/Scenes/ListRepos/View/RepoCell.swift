@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class RepoCell: UITableViewCell {
     
@@ -32,9 +33,18 @@ class RepoCell: UITableViewCell {
         lblStars.text = nil
     }
     
+    // MARK: Configure
     func configure(with repo: Repo) {
+        setImageWith(repo.photoAuthor)
         lblNameRepository.text = repo.name
         lblNameAuthor.text = repo.nameAuthor
         lblStars.text = "⭐️ \(repo.stars)"
+    }
+    
+    // MARK: Helpers
+    private func setImageWith(_ urlString: String) {
+        if let url = URL(string: urlString) {
+            ivPhotoAuthor.kf.setImage(with: url)
+        }
     }
 }

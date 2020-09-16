@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC56375F4210DA209C6F1042 /* Pods_ConsumerGithub_charllenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4405605BEF8DB0C6361CC459 /* Pods_ConsumerGithub_charllenger.framework */; };
 		BD829CC125126FAC00499A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CC025126FAC00499A52 /* AppDelegate.swift */; };
 		BD829CC825126FAC00499A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD829CC625126FAC00499A52 /* Main.storyboard */; };
 		BD829CCA25126FB000499A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD829CC925126FB000499A52 /* Assets.xcassets */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4405605BEF8DB0C6361CC459 /* Pods_ConsumerGithub_charllenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConsumerGithub_charllenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44DDB4AE0CC85BB21E37CA2 /* Pods-ConsumerGithub-charllenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumerGithub-charllenger.release.xcconfig"; path = "Target Support Files/Pods-ConsumerGithub-charllenger/Pods-ConsumerGithub-charllenger.release.xcconfig"; sourceTree = "<group>"; };
 		BD829CBD25126FAC00499A52 /* ConsumerGithub-charllenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ConsumerGithub-charllenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD829CC025126FAC00499A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD829CC725126FAC00499A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		BD829CE8251285D700499A52 /* ListReposResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposResponse.swift; sourceTree = "<group>"; };
 		BD829CEB251295C100499A52 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		BD829CEC251295C100499A52 /* RepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
+		D19EE999A9C2A59166227293 /* Pods-ConsumerGithub-charllenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumerGithub-charllenger.debug.xcconfig"; path = "Target Support Files/Pods-ConsumerGithub-charllenger/Pods-ConsumerGithub-charllenger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +49,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC56375F4210DA209C6F1042 /* Pods_ConsumerGithub_charllenger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41517C2888A8AFDEC78391F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D19EE999A9C2A59166227293 /* Pods-ConsumerGithub-charllenger.debug.xcconfig */,
+				B44DDB4AE0CC85BB21E37CA2 /* Pods-ConsumerGithub-charllenger.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4E4EA8D5E36AC4533FC71FF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4405605BEF8DB0C6361CC459 /* Pods_ConsumerGithub_charllenger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD829CB425126FAC00499A52 = {
 			isa = PBXGroup;
 			children = (
 				BD829CBF25126FAC00499A52 /* ConsumerGithub-charllenger */,
 				BD829CBE25126FAC00499A52 /* Products */,
+				41517C2888A8AFDEC78391F5 /* Pods */,
+				4E4EA8D5E36AC4533FC71FF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD829CD125126FB000499A52 /* Build configuration list for PBXNativeTarget "ConsumerGithub-charllenger" */;
 			buildPhases = (
+				F187F4C13558A9A88A09C601 /* [CP] Check Pods Manifest.lock */,
 				BD829CB925126FAC00499A52 /* Sources */,
 				BD829CBA25126FAC00499A52 /* Frameworks */,
 				BD829CBB25126FAC00499A52 /* Resources */,
+				CD72AA9DF984E37E07EAD10C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +254,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD72AA9DF984E37E07EAD10C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConsumerGithub-charllenger/Pods-ConsumerGithub-charllenger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConsumerGithub-charllenger/Pods-ConsumerGithub-charllenger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConsumerGithub-charllenger/Pods-ConsumerGithub-charllenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F187F4C13558A9A88A09C601 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConsumerGithub-charllenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD829CB925126FAC00499A52 /* Sources */ = {
@@ -382,6 +451,7 @@
 		};
 		BD829CD225126FB000499A52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19EE999A9C2A59166227293 /* Pods-ConsumerGithub-charllenger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -401,6 +471,7 @@
 		};
 		BD829CD325126FB000499A52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B44DDB4AE0CC85BB21E37CA2 /* Pods-ConsumerGithub-charllenger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
