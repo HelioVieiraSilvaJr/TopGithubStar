@@ -11,6 +11,13 @@
 		BD829CC825126FAC00499A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD829CC625126FAC00499A52 /* Main.storyboard */; };
 		BD829CCA25126FB000499A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD829CC925126FB000499A52 /* Assets.xcassets */; };
 		BD829CCD25126FB000499A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD829CCB25126FB000499A52 /* LaunchScreen.storyboard */; };
+		BD829CDA2512727400499A52 /* ListReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CD92512727400499A52 /* ListReposViewController.swift */; };
+		BD829CDC2512727E00499A52 /* ListReposViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD829CDB2512727E00499A52 /* ListReposViewController.storyboard */; };
+		BD829CDE2512728E00499A52 /* ListReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CDD2512728E00499A52 /* ListReposViewModel.swift */; };
+		BD829CE22512737600499A52 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CE12512737600499A52 /* Repo.swift */; };
+		BD829CE42512749F00499A52 /* ListReposService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CE32512749F00499A52 /* ListReposService.swift */; };
+		BD829CE7251276AA00499A52 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CE6251276AA00499A52 /* UIViewController+Extensions.swift */; };
+		BD829CE9251285D700499A52 /* ListReposResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CE8251285D700499A52 /* ListReposResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		BD829CC925126FB000499A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD829CCC25126FB000499A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD829CCE25126FB000499A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD829CD92512727400499A52 /* ListReposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposViewController.swift; sourceTree = "<group>"; };
+		BD829CDB2512727E00499A52 /* ListReposViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListReposViewController.storyboard; sourceTree = "<group>"; };
+		BD829CDD2512728E00499A52 /* ListReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposViewModel.swift; sourceTree = "<group>"; };
+		BD829CE12512737600499A52 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		BD829CE32512749F00499A52 /* ListReposService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposService.swift; sourceTree = "<group>"; };
+		BD829CE6251276AA00499A52 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		BD829CE8251285D700499A52 /* ListReposResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,7 @@
 		BD829CD62512714800499A52 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BD829CD82512723B00499A52 /* ListRepos */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -89,8 +104,46 @@
 		BD829CD72512714E00499A52 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				BD829CE52512767700499A52 /* Exetensions */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		BD829CD82512723B00499A52 /* ListRepos */ = {
+			isa = PBXGroup;
+			children = (
+				BD829CE02512729800499A52 /* Service */,
+				BD829CDF2512729400499A52 /* Model */,
+				BD829CDD2512728E00499A52 /* ListReposViewModel.swift */,
+				BD829CD92512727400499A52 /* ListReposViewController.swift */,
+				BD829CDB2512727E00499A52 /* ListReposViewController.storyboard */,
+			);
+			path = ListRepos;
+			sourceTree = "<group>";
+		};
+		BD829CDF2512729400499A52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD829CE12512737600499A52 /* Repo.swift */,
+				BD829CE8251285D700499A52 /* ListReposResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD829CE02512729800499A52 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BD829CE32512749F00499A52 /* ListReposService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BD829CE52512767700499A52 /* Exetensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD829CE6251276AA00499A52 /* UIViewController+Extensions.swift */,
+			);
+			path = Exetensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD829CCD25126FB000499A52 /* LaunchScreen.storyboard in Resources */,
+				BD829CDC2512727E00499A52 /* ListReposViewController.storyboard in Resources */,
 				BD829CCA25126FB000499A52 /* Assets.xcassets in Resources */,
 				BD829CC825126FAC00499A52 /* Main.storyboard in Resources */,
 			);
@@ -164,7 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD829CE9251285D700499A52 /* ListReposResponse.swift in Sources */,
+				BD829CDE2512728E00499A52 /* ListReposViewModel.swift in Sources */,
+				BD829CDA2512727400499A52 /* ListReposViewController.swift in Sources */,
 				BD829CC125126FAC00499A52 /* AppDelegate.swift in Sources */,
+				BD829CE22512737600499A52 /* Repo.swift in Sources */,
+				BD829CE7251276AA00499A52 /* UIViewController+Extensions.swift in Sources */,
+				BD829CE42512749F00499A52 /* ListReposService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
