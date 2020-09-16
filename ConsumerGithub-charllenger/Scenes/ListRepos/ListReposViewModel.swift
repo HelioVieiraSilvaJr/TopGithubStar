@@ -32,4 +32,9 @@ class ListReposViewModel {
             }
         }
     }
+    
+    func reloadRepos() {
+        pagination = 1
+        fetchRepos()
+    }
 }
