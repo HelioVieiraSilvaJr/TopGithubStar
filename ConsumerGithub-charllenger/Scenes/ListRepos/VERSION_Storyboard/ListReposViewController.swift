@@ -36,13 +36,22 @@ final class ListReposViewController: UITableViewController {
         title = "Version - Storyboard"
         tableView.register(UINib(nibName: RepoCell.identifier, bundle: nil), forCellReuseIdentifier: RepoCell.identifier)
         tableView.refreshControl?.addTarget(self, action: #selector(reloadRepos), for: .valueChanged)
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        let barButtonItemChangeVC = UIBarButtonItem(title: "ViewCode", style: .plain, target: self, action: #selector(changeViewController))
+        navigationItem.rightBarButtonItem = barButtonItemChangeVC
     }
     
     @objc private func reloadRepos() {
         viewModel.reloadRepos()
     }
+    
+    @objc private func changeViewController() {
+        (UIApplication.shared.delegate as? AppDelegate)?.setRootViewController(.viewCode)
+    }
 }
 
+// MARK: Extensions
 extension ListReposViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.repos.count

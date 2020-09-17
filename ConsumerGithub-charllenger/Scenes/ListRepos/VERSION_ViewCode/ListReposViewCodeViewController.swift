@@ -14,6 +14,7 @@ final class ListReposViewCodeViewController: UIViewController, HasCodeView {
     
     // MARK: Properties
     var viewModel = ListReposViewModel()
+    private var refreshControl = UIRefreshControl()
     
     // MARK: Overrides
     override func loadView() {
@@ -32,7 +33,7 @@ final class ListReposViewCodeViewController: UIViewController, HasCodeView {
     private func bindEvents() {
         viewModel.shouldUpdate = { [weak self] in
             DispatchQueue.main.async {
-                self?.customView.tableView.refreshControl?.endRefreshing()
+                self?.refreshControl.endRefreshing()
                 self?.customView.tableView.reloadData()
             }
         }
@@ -40,16 +41,26 @@ final class ListReposViewCodeViewController: UIViewController, HasCodeView {
     
     private func setup() {
         title = "Version - ViewCode"
-        
         customView.tableView.dataSource = self
         customView.tableView.delegate = self
+        customView.tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(reloadRepos), for: .valueChanged)
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        let barButtonItemChangeVC = UIBarButtonItem(title: "Storyboard", style: .plain, target: self, action: #selector(changeViewController))
+        navigationItem.rightBarButtonItem = barButtonItemChangeVC
     }
     
     @objc private func reloadRepos() {
         viewModel.reloadRepos()
     }
+    
+    @objc private func changeViewController() {
+        (UIApplication.shared.delegate as? AppDelegate)?.setRootViewController(.storyboard)
+    }
 }
 
+// MARK: Extensions
 extension ListReposViewCodeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.repos.count
