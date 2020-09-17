@@ -16,6 +16,7 @@ final class ListReposViewCode: BaseView {
         tableView.tableFooterView = UIView(frame: .zero)
         tableView.clipsToBounds = true
         tableView.layer.cornerRadius = 8
+        tableView.showsVerticalScrollIndicator = false
         tableView.register(RepoViewCodeCell.self, forCellReuseIdentifier: RepoViewCodeCell.identifier)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView

@@ -89,4 +89,11 @@ extension ListReposViewController: UITableViewDelegate {
             viewModel.fetchRepos()
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let repo = viewModel.repos[indexPath.row]
+        if let url = URL(string: repo.urlGithub) {
+            UIApplication.shared.open(url)
+        }
+    }
 }

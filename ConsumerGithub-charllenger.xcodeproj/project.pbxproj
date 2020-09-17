@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AC56375F4210DA209C6F1042 /* Pods_ConsumerGithub_charllenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4405605BEF8DB0C6361CC459 /* Pods_ConsumerGithub_charllenger.framework */; };
 		BD829CC125126FAC00499A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CC025126FAC00499A52 /* AppDelegate.swift */; };
-		BD829CC825126FAC00499A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD829CC625126FAC00499A52 /* Main.storyboard */; };
 		BD829CCA25126FB000499A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD829CC925126FB000499A52 /* Assets.xcassets */; };
 		BD829CCD25126FB000499A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD829CCB25126FB000499A52 /* LaunchScreen.storyboard */; };
 		BD829CDA2512727400499A52 /* ListReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CD92512727400499A52 /* ListReposViewController.swift */; };
@@ -33,7 +32,6 @@
 		B44DDB4AE0CC85BB21E37CA2 /* Pods-ConsumerGithub-charllenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumerGithub-charllenger.release.xcconfig"; path = "Target Support Files/Pods-ConsumerGithub-charllenger/Pods-ConsumerGithub-charllenger.release.xcconfig"; sourceTree = "<group>"; };
 		BD829CBD25126FAC00499A52 /* ConsumerGithub-charllenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ConsumerGithub-charllenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD829CC025126FAC00499A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD829CC725126FAC00499A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD829CC925126FB000499A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD829CCC25126FB000499A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD829CCE25126FB000499A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				BD829CCE25126FB000499A52 /* Info.plist */,
-				BD829CC625126FAC00499A52 /* Main.storyboard */,
 				BD829CC925126FB000499A52 /* Assets.xcassets */,
 				BD829CCB25126FB000499A52 /* LaunchScreen.storyboard */,
 			);
@@ -155,8 +152,8 @@
 				BD829CE02512729800499A52 /* Service */,
 				BD829CDF2512729400499A52 /* Model */,
 				BD829D082513164F00499A52 /* ViewModel */,
-				BD829D06251315DF00499A52 /* VERSION_Storyboard */,
-				BD829D07251315EF00499A52 /* VERSION_ViewCode */,
+				BD829D06251315DF00499A52 /* View_Storyboard */,
+				BD829D07251315EF00499A52 /* View_ViewCode */,
 			);
 			path = ListRepos;
 			sourceTree = "<group>";
@@ -186,32 +183,33 @@
 			path = Exetensions;
 			sourceTree = "<group>";
 		};
-		BD829CEA2512959600499A52 /* View */ = {
+		BD829CEA2512959600499A52 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				BD829CEB251295C100499A52 /* RepoCell.swift */,
 				BD829CEC251295C100499A52 /* RepoCell.xib */,
 			);
-			path = View;
+			path = Cell;
 			sourceTree = "<group>";
 		};
-		BD829D06251315DF00499A52 /* VERSION_Storyboard */ = {
+		BD829D06251315DF00499A52 /* View_Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				BD829CEA2512959600499A52 /* View */,
+				BD829CEA2512959600499A52 /* Cell */,
 				BD829CD92512727400499A52 /* ListReposViewController.swift */,
 				BD829CDB2512727E00499A52 /* ListReposViewController.storyboard */,
 			);
-			path = VERSION_Storyboard;
+			path = View_Storyboard;
 			sourceTree = "<group>";
 		};
-		BD829D07251315EF00499A52 /* VERSION_ViewCode */ = {
+		BD829D07251315EF00499A52 /* View_ViewCode */ = {
 			isa = PBXGroup;
 			children = (
-				BD829D0E251317B300499A52 /* View */,
+				BD829D0E251317B300499A52 /* Cell */,
+				BD829D0F251317D000499A52 /* ListReposViewCode.swift */,
 				BD829D09251316BA00499A52 /* ListReposViewCodeViewController.swift */,
 			);
-			path = VERSION_ViewCode;
+			path = View_ViewCode;
 			sourceTree = "<group>";
 		};
 		BD829D082513164F00499A52 /* ViewModel */ = {
@@ -230,13 +228,12 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		BD829D0E251317B300499A52 /* View */ = {
+		BD829D0E251317B300499A52 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				BD829D0F251317D000499A52 /* ListReposViewCode.swift */,
 				BD829D1425131BAE00499A52 /* RepoViewCodeCell.swift */,
 			);
-			path = View;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		BD829D112513186300499A52 /* ViewCode */ = {
@@ -311,7 +308,6 @@
 				BD829CEE251295C100499A52 /* RepoCell.xib in Resources */,
 				BD829CDC2512727E00499A52 /* ListReposViewController.storyboard in Resources */,
 				BD829CCA25126FB000499A52 /* Assets.xcassets in Resources */,
-				BD829CC825126FAC00499A52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,14 +379,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BD829CC625126FAC00499A52 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD829CC725126FAC00499A52 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD829CCB25126FB000499A52 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
