@@ -13,11 +13,13 @@ struct Repo: Decodable {
     let stars: Int
     let photoAuthor: String
     let nameAuthor: String
+    let urlGithub: String
     
     init(from item: ListReposResponse.Item) {
         name = item.name
         stars = item.stargazersCount
         photoAuthor = item.owner.avatarUrl
         nameAuthor = item.owner.login
+        urlGithub = item.htmlUrl
     }
 }

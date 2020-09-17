@@ -14,10 +14,12 @@ struct ListReposResponse: Decodable {
     struct Item: Decodable {
         let name: String
         let stargazersCount: Int
+        let htmlUrl: String
         let owner: Owner
         
         enum CodingKeys: String, CodingKey {
             case name, owner
+            case htmlUrl = "html_url"
             case stargazersCount = "stargazers_count"
         }
         

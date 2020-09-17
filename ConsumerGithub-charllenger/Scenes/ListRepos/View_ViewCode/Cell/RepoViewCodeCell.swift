@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-class RepoViewCodeCell: UITableViewCell {
+final class RepoViewCodeCell: UITableViewCell {
 
     static let identifier = "RepoViewCodeCell"
     
