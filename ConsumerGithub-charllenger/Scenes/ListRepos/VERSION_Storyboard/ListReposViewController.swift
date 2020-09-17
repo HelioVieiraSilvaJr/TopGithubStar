@@ -33,7 +33,7 @@ final class ListReposViewController: UITableViewController {
     }
     
     private func setup() {
-        title = "Github Repos"
+        title = "Version - Storyboard"
         tableView.register(UINib(nibName: RepoCell.identifier, bundle: nil), forCellReuseIdentifier: RepoCell.identifier)
         tableView.refreshControl?.addTarget(self, action: #selector(reloadRepos), for: .valueChanged)
     }

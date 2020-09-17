@@ -15,8 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        let viewController = ListReposViewController().instantiate() as! ListReposViewController
+//        let navController = UINavigationController(rootViewController: viewController)
+//        window?.rootViewController = navController
+//        window?.makeKeyAndVisible()
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = ListReposViewController().instantiate() as! ListReposViewController
+        window?.backgroundColor = .white
+        let viewController = ListReposViewCodeViewController()
         let navController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
