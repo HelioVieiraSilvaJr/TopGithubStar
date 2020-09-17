@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ListReposViewModel {
+final class ListReposViewModel {
     
     private let service: ListReposService!
     private var pagination: Int = 1

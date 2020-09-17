@@ -8,15 +8,26 @@
 
 import UIKit
 
-final class ListReposViewController: UITableViewController {
+final class ListReposViewController: UIViewController {
     
     // MARK: Properties
     private let viewModel = ListReposViewModel()
+    private var refreshControl = UIRefreshControl()
+    
+    // MARK: Outlets
+    @IBOutlet weak var tableView: UITableView! {
+        didSet{
+            tableView.dataSource = self
+            tableView.delegate = self
+            tableView.register(UINib(nibName: RepoCell.identifier, bundle: nil), forCellReuseIdentifier: RepoCell.identifier)
+            tableView.refreshControl?.addTarget(self, action: #selector(reloadRepos), for: .valueChanged)
+            tableView.refreshControl = refreshControl
+        }
+    }
     
     // MARK: Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setup()
         bindEvents()
         viewModel.fetchRepos()
@@ -26,7 +37,7 @@ final class ListReposViewController: UITableViewController {
     private func bindEvents() {
         viewModel.shouldUpdate = { [weak self] in
             DispatchQueue.main.async {
-                self?.tableView.refreshControl?.endRefreshing()
+                self?.refreshControl.endRefreshing()
                 self?.tableView.reloadData()
             }
         }
@@ -34,12 +45,13 @@ final class ListReposViewController: UITableViewController {
     
     private func setup() {
         title = "Version - Storyboard"
-        tableView.register(UINib(nibName: RepoCell.identifier, bundle: nil), forCellReuseIdentifier: RepoCell.identifier)
-        tableView.refreshControl?.addTarget(self, action: #selector(reloadRepos), for: .valueChanged)
-        
         navigationController?.navigationBar.prefersLargeTitles = true
-        let barButtonItemChangeVC = UIBarButtonItem(title: "ViewCode", style: .plain, target: self, action: #selector(changeViewController))
+        let barButtonItemChangeVC = UIBarButtonItem(title: "ViewCode",
+                                                    style: .plain,
+                                                    target: self,
+                                                    action: #selector(changeViewController))
         navigationItem.rightBarButtonItem = barButtonItemChangeVC
+        refreshControl.addTarget(self, action: #selector(reloadRepos), for: .valueChanged)
     }
     
     @objc private func reloadRepos() {
@@ -52,12 +64,12 @@ final class ListReposViewController: UITableViewController {
 }
 
 // MARK: Extensions
-extension ListReposViewController {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension ListReposViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.repos.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: RepoCell.identifier) as? RepoCell else {
             return UITableViewCell()
@@ -66,8 +78,10 @@ extension ListReposViewController {
         cell.configure(with: repo)
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+}
+
+extension ListReposViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard indexPath.row > 0 else {return}
         let indexNeedFetchNewRepos = viewModel.repos.count - 1
         
