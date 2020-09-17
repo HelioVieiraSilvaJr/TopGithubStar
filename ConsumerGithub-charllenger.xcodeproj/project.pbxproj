@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		4405605BEF8DB0C6361CC459 /* Pods_ConsumerGithub_charllenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConsumerGithub_charllenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44DDB4AE0CC85BB21E37CA2 /* Pods-ConsumerGithub-charllenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumerGithub-charllenger.release.xcconfig"; path = "Target Support Files/Pods-ConsumerGithub-charllenger/Pods-ConsumerGithub-charllenger.release.xcconfig"; sourceTree = "<group>"; };
-		BD829CBD25126FAC00499A52 /* ConsumerGithub-charllenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ConsumerGithub-charllenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD829CBD25126FAC00499A52 /* TopGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD829CC025126FAC00499A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD829CC925126FB000499A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD829CCC25126FB000499A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		BD829CBE25126FAC00499A52 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD829CBD25126FAC00499A52 /* ConsumerGithub-charllenger.app */,
+				BD829CBD25126FAC00499A52 /* TopGithub.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 			);
 			name = "ConsumerGithub-charllenger";
 			productName = "ConsumerGithub-charllenger";
-			productReference = BD829CBD25126FAC00499A52 /* ConsumerGithub-charllenger.app */;
+			productReference = BD829CBD25126FAC00499A52 /* TopGithub.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -518,7 +518,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "heliotecnologia.com.br.ConsumerGithub-charllenger";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TopGithub;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -538,7 +538,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "heliotecnologia.com.br.ConsumerGithub-charllenger";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TopGithub;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
