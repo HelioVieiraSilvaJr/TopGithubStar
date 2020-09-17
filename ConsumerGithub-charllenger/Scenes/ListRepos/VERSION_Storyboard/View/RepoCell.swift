@@ -22,6 +22,7 @@ class RepoCell: UITableViewCell {
     // MARK: Overrides
     override func awakeFromNib() {
         super.awakeFromNib()
+        selectionStyle = .none
         ivPhotoAuthor.layer.cornerRadius = ivPhotoAuthor.frame.width / 2
     }
 

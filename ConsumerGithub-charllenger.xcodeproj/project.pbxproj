@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,11 @@
 		BD829CE9251285D700499A52 /* ListReposResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CE8251285D700499A52 /* ListReposResponse.swift */; };
 		BD829CED251295C100499A52 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CEB251295C100499A52 /* RepoCell.swift */; };
 		BD829CEE251295C100499A52 /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD829CEC251295C100499A52 /* RepoCell.xib */; };
+		BD829D0A251316BA00499A52 /* ListReposViewCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829D09251316BA00499A52 /* ListReposViewCodeViewController.swift */; };
+		BD829D0D2513176D00499A52 /* HasViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829D0C2513176D00499A52 /* HasViewCode.swift */; };
+		BD829D10251317D000499A52 /* ListReposViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829D0F251317D000499A52 /* ListReposViewCode.swift */; };
+		BD829D132513186F00499A52 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829D122513186F00499A52 /* BaseView.swift */; };
+		BD829D1525131BAE00499A52 /* RepoViewCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829D1425131BAE00499A52 /* RepoViewCodeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,11 @@
 		BD829CE8251285D700499A52 /* ListReposResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposResponse.swift; sourceTree = "<group>"; };
 		BD829CEB251295C100499A52 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		BD829CEC251295C100499A52 /* RepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
+		BD829D09251316BA00499A52 /* ListReposViewCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposViewCodeViewController.swift; sourceTree = "<group>"; };
+		BD829D0C2513176D00499A52 /* HasViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasViewCode.swift; sourceTree = "<group>"; };
+		BD829D0F251317D000499A52 /* ListReposViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposViewCode.swift; sourceTree = "<group>"; };
+		BD829D122513186F00499A52 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		BD829D1425131BAE00499A52 /* RepoViewCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewCodeCell.swift; sourceTree = "<group>"; };
 		D19EE999A9C2A59166227293 /* Pods-ConsumerGithub-charllenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumerGithub-charllenger.debug.xcconfig"; path = "Target Support Files/Pods-ConsumerGithub-charllenger/Pods-ConsumerGithub-charllenger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +72,6 @@
 				D19EE999A9C2A59166227293 /* Pods-ConsumerGithub-charllenger.debug.xcconfig */,
 				B44DDB4AE0CC85BB21E37CA2 /* Pods-ConsumerGithub-charllenger.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -134,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				BD829CE52512767700499A52 /* Exetensions */,
+				BD829D0B2513175F00499A52 /* Protocol */,
+				BD829D112513186300499A52 /* ViewCode */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -143,10 +154,9 @@
 			children = (
 				BD829CE02512729800499A52 /* Service */,
 				BD829CDF2512729400499A52 /* Model */,
-				BD829CEA2512959600499A52 /* View */,
-				BD829CDD2512728E00499A52 /* ListReposViewModel.swift */,
-				BD829CD92512727400499A52 /* ListReposViewController.swift */,
-				BD829CDB2512727E00499A52 /* ListReposViewController.storyboard */,
+				BD829D082513164F00499A52 /* ViewModel */,
+				BD829D06251315DF00499A52 /* VERSION_Storyboard */,
+				BD829D07251315EF00499A52 /* VERSION_ViewCode */,
 			);
 			path = ListRepos;
 			sourceTree = "<group>";
@@ -183,6 +193,58 @@
 				BD829CEC251295C100499A52 /* RepoCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BD829D06251315DF00499A52 /* VERSION_Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BD829CEA2512959600499A52 /* View */,
+				BD829CD92512727400499A52 /* ListReposViewController.swift */,
+				BD829CDB2512727E00499A52 /* ListReposViewController.storyboard */,
+			);
+			path = VERSION_Storyboard;
+			sourceTree = "<group>";
+		};
+		BD829D07251315EF00499A52 /* VERSION_ViewCode */ = {
+			isa = PBXGroup;
+			children = (
+				BD829D0E251317B300499A52 /* View */,
+				BD829D09251316BA00499A52 /* ListReposViewCodeViewController.swift */,
+			);
+			path = VERSION_ViewCode;
+			sourceTree = "<group>";
+		};
+		BD829D082513164F00499A52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD829CDD2512728E00499A52 /* ListReposViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD829D0B2513175F00499A52 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BD829D0C2513176D00499A52 /* HasViewCode.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BD829D0E251317B300499A52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD829D0F251317D000499A52 /* ListReposViewCode.swift */,
+				BD829D1425131BAE00499A52 /* RepoViewCodeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD829D112513186300499A52 /* ViewCode */ = {
+			isa = PBXGroup;
+			children = (
+				BD829D122513186F00499A52 /* BaseView.swift */,
+			);
+			path = ViewCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,11 +367,16 @@
 				BD829CE9251285D700499A52 /* ListReposResponse.swift in Sources */,
 				BD829CDE2512728E00499A52 /* ListReposViewModel.swift in Sources */,
 				BD829CDA2512727400499A52 /* ListReposViewController.swift in Sources */,
+				BD829D132513186F00499A52 /* BaseView.swift in Sources */,
 				BD829CC125126FAC00499A52 /* AppDelegate.swift in Sources */,
+				BD829D1525131BAE00499A52 /* RepoViewCodeCell.swift in Sources */,
 				BD829CE22512737600499A52 /* Repo.swift in Sources */,
 				BD829CE7251276AA00499A52 /* UIViewController+Extensions.swift in Sources */,
+				BD829D0D2513176D00499A52 /* HasViewCode.swift in Sources */,
 				BD829CE42512749F00499A52 /* ListReposService.swift in Sources */,
 				BD829CED251295C100499A52 /* RepoCell.swift in Sources */,
+				BD829D10251317D000499A52 /* ListReposViewCode.swift in Sources */,
+				BD829D0A251316BA00499A52 /* ListReposViewCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
