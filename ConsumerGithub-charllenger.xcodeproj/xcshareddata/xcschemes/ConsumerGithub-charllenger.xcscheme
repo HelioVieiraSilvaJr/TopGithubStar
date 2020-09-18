@@ -39,6 +39,16 @@
                ReferencedContainer = "container:ConsumerGithub-charllenger.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BD564F2325146BE10096EFDE"
+               BuildableName = "TopGithubSnapshotTests.xctest"
+               BlueprintName = "TopGithubSnapshotTests"
+               ReferencedContainer = "container:ConsumerGithub-charllenger.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -61,6 +71,18 @@
             ReferencedContainer = "container:ConsumerGithub-charllenger.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "FB_REFERENCE_IMAGE_DIR"
+            value = "$(SOURCE_ROOT)/TopGithubSnapshotTests/ReferenceImages"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "IMAGE_DIFF_DIR"
+            value = "$(SOURCE_ROOT)/TopGithubSnapshotTests/FailureDiffs"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
