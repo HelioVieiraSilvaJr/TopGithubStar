@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='TopGithubSnapshotTests.xctest' tests='8' failures='0'>
+  <testsuite name='TopGithubTests.ListReposServiceTest' tests='1' failures='0'>
+    <testcase classname='TopGithubTests.ListReposServiceTest' name='testFetchReposResponseSuccess' time='1.247'/>
+  </testsuite>
+  <testsuite name='TopGithubTests.ListReposViewControllerTest' tests='4' failures='0'>
+    <testcase classname='TopGithubTests.ListReposViewControllerTest' name='testHasATableview' time='0.008'/>
+    <testcase classname='TopGithubTests.ListReposViewControllerTest' name='testTableCellHasCorrectLabelText' time='0.010'/>
+    <testcase classname='TopGithubTests.ListReposViewControllerTest' name='testTableviewCellHasReuseIdentifier' time='0.006'/>
+    <testcase classname='TopGithubTests.ListReposViewControllerTest' name='testTableviewHasDelegate' time='0.005'/>
+  </testsuite>
+  <testsuite name='TopGithubTests.ListReposViewModelTest' tests='2' failures='0'>
+    <testcase classname='TopGithubTests.ListReposViewModelTest' name='testFetchRepos' time='0.003'/>
+    <testcase classname='TopGithubTests.ListReposViewModelTest' name='testReloadRepos' time='0.003'/>
+  </testsuite>
+  <testsuite name='TopGithubSnapshotTests.ListReposViewControllerSnapshotTest' tests='1' failures='0'>
+    <testcase classname='TopGithubSnapshotTests.ListReposViewControllerSnapshotTest' name='testView' time='0.132'/>
+  </testsuite>
+</testsuites>

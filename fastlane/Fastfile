@@ -1,0 +1,21 @@
+fastlane_version "2.141.0"
+
+default_platform :ios
+
+platform :ios do
+  desc "Run unit tests"
+  lane :tests do
+    scan(workspace: "ConsumerGithub-charllenger.xcworkspace", device: "iPhone 11", scheme: "TopGithub", code_coverage: true)
+  
+  slather(
+      output_directory: "fastlane/html",
+      workspace: "ConsumerGithub-charllenger.xcworkspace",
+      html: true,
+      scheme: "TopGithub",
+      proj: "ConsumerGithub-charllenger.xcodeproj",
+      ignore: [ "R.generated.swift", "Pods/*"],
+      verbose: true,
+      show: true
+  )
+  end
+end
