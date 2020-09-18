@@ -11,7 +11,7 @@ import UIKit
 final class ListReposViewController: UIViewController {
     
     // MARK: Properties
-    private let viewModel = ListReposViewModel()
+    var viewModel = ListReposViewModel()
     private var refreshControl = UIRefreshControl()
     
     // MARK: Outlets
