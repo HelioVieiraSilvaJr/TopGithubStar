@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AC56375F4210DA209C6F1042 /* Pods_ConsumerGithub_charllenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4405605BEF8DB0C6361CC459 /* Pods_ConsumerGithub_charllenger.framework */; };
+		BD564EE9251451280096EFDE /* ListReposViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD564EE8251451280096EFDE /* ListReposViewModelTest.swift */; };
+		BD564EF1251453B80096EFDE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD564EF0251453B80096EFDE /* APIError.swift */; };
+		BD564EF8251454670096EFDE /* ListReposServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD564EF7251454670096EFDE /* ListReposServiceStub.swift */; };
+		BD564EFE251455080096EFDE /* listReposResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = BD564EFD251455080096EFDE /* listReposResponse.json */; };
+		BD564F0A25145A7B0096EFDE /* ListReposServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD564F0925145A7B0096EFDE /* ListReposServiceTest.swift */; };
+		BD564F1025145D3F0096EFDE /* ListReposViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD564F0F25145D3F0096EFDE /* ListReposViewControllerTest.swift */; };
 		BD829CC125126FAC00499A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CC025126FAC00499A52 /* AppDelegate.swift */; };
 		BD829CCA25126FB000499A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD829CC925126FB000499A52 /* Assets.xcassets */; };
 		BD829CCD25126FB000499A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD829CCB25126FB000499A52 /* LaunchScreen.storyboard */; };
@@ -27,9 +33,27 @@
 		BD829D1525131BAE00499A52 /* RepoViewCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829D1425131BAE00499A52 /* RepoViewCodeCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BD564EE0251451060096EFDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD829CB525126FAC00499A52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD829CBC25126FAC00499A52;
+			remoteInfo = "ConsumerGithub-charllenger";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4405605BEF8DB0C6361CC459 /* Pods_ConsumerGithub_charllenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConsumerGithub_charllenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44DDB4AE0CC85BB21E37CA2 /* Pods-ConsumerGithub-charllenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumerGithub-charllenger.release.xcconfig"; path = "Target Support Files/Pods-ConsumerGithub-charllenger/Pods-ConsumerGithub-charllenger.release.xcconfig"; sourceTree = "<group>"; };
+		BD564EDB251451060096EFDE /* TopGithubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopGithubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD564EDF251451060096EFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD564EE8251451280096EFDE /* ListReposViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposViewModelTest.swift; sourceTree = "<group>"; };
+		BD564EF0251453B80096EFDE /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		BD564EF7251454670096EFDE /* ListReposServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposServiceStub.swift; sourceTree = "<group>"; };
+		BD564EFD251455080096EFDE /* listReposResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listReposResponse.json; sourceTree = "<group>"; };
+		BD564F0925145A7B0096EFDE /* ListReposServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposServiceTest.swift; sourceTree = "<group>"; };
+		BD564F0F25145D3F0096EFDE /* ListReposViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposViewControllerTest.swift; sourceTree = "<group>"; };
 		BD829CBD25126FAC00499A52 /* TopGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD829CC025126FAC00499A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD829CC925126FB000499A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +77,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BD564ED8251451060096EFDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD829CBA25126FAC00499A52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,10 +112,64 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD564EDC251451060096EFDE /* TopGithubTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD564EF62514543F0096EFDE /* Stubs */,
+				BD564EE72514510C0096EFDE /* ListRepos */,
+				BD564EDF251451060096EFDE /* Info.plist */,
+			);
+			path = TopGithubTests;
+			sourceTree = "<group>";
+		};
+		BD564EE72514510C0096EFDE /* ListRepos */ = {
+			isa = PBXGroup;
+			children = (
+				BD564F0825145A3B0096EFDE /* Service */,
+				BD564F0725145A220096EFDE /* ViewModel */,
+				BD564F13251466A20096EFDE /* View */,
+			);
+			path = ListRepos;
+			sourceTree = "<group>";
+		};
+		BD564EF62514543F0096EFDE /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				BD564EF7251454670096EFDE /* ListReposServiceStub.swift */,
+				BD564EFD251455080096EFDE /* listReposResponse.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		BD564F0725145A220096EFDE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD564EE8251451280096EFDE /* ListReposViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD564F0825145A3B0096EFDE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BD564F0925145A7B0096EFDE /* ListReposServiceTest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BD564F13251466A20096EFDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD564F0F25145D3F0096EFDE /* ListReposViewControllerTest.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BD829CB425126FAC00499A52 = {
 			isa = PBXGroup;
 			children = (
 				BD829CBF25126FAC00499A52 /* ConsumerGithub-charllenger */,
+				BD564EDC251451060096EFDE /* TopGithubTests */,
 				BD829CBE25126FAC00499A52 /* Products */,
 				41517C2888A8AFDEC78391F5 /* Pods */,
 				4E4EA8D5E36AC4533FC71FF7 /* Frameworks */,
@@ -95,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				BD829CBD25126FAC00499A52 /* TopGithub.app */,
+				BD564EDB251451060096EFDE /* TopGithubTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				BD829CC025126FAC00499A52 /* AppDelegate.swift */,
+				BD564EF0251453B80096EFDE /* APIError.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -247,9 +334,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BD829CBC25126FAC00499A52 /* ConsumerGithub-charllenger */ = {
+		BD564EDA251451060096EFDE /* TopGithubTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD829CD125126FB000499A52 /* Build configuration list for PBXNativeTarget "ConsumerGithub-charllenger" */;
+			buildConfigurationList = BD564EE4251451060096EFDE /* Build configuration list for PBXNativeTarget "TopGithubTests" */;
+			buildPhases = (
+				BD564ED7251451060096EFDE /* Sources */,
+				BD564ED8251451060096EFDE /* Frameworks */,
+				BD564ED9251451060096EFDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD564EE1251451060096EFDE /* PBXTargetDependency */,
+			);
+			name = TopGithubTests;
+			productName = TopGithubTests;
+			productReference = BD564EDB251451060096EFDE /* TopGithubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD829CBC25126FAC00499A52 /* TopGithub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD829CD125126FB000499A52 /* Build configuration list for PBXNativeTarget "TopGithub" */;
 			buildPhases = (
 				F187F4C13558A9A88A09C601 /* [CP] Check Pods Manifest.lock */,
 				BD829CB925126FAC00499A52 /* Sources */,
@@ -261,7 +366,7 @@
 			);
 			dependencies = (
 			);
-			name = "ConsumerGithub-charllenger";
+			name = TopGithub;
 			productName = "ConsumerGithub-charllenger";
 			productReference = BD829CBD25126FAC00499A52 /* TopGithub.app */;
 			productType = "com.apple.product-type.application";
@@ -272,10 +377,14 @@
 		BD829CB525126FAC00499A52 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1170;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = HelioTecnologia;
 				TargetAttributes = {
+					BD564EDA251451060096EFDE = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = BD829CBC25126FAC00499A52;
+					};
 					BD829CBC25126FAC00499A52 = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -294,12 +403,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD829CBC25126FAC00499A52 /* ConsumerGithub-charllenger */,
+				BD829CBC25126FAC00499A52 /* TopGithub */,
+				BD564EDA251451060096EFDE /* TopGithubTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BD564ED9251451060096EFDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD564EFE251455080096EFDE /* listReposResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD829CBB25126FAC00499A52 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,6 +474,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BD564ED7251451060096EFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD564EE9251451280096EFDE /* ListReposViewModelTest.swift in Sources */,
+				BD564F1025145D3F0096EFDE /* ListReposViewControllerTest.swift in Sources */,
+				BD564EF8251454670096EFDE /* ListReposServiceStub.swift in Sources */,
+				BD564F0A25145A7B0096EFDE /* ListReposServiceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD829CB925126FAC00499A52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,10 +502,19 @@
 				BD829CED251295C100499A52 /* RepoCell.swift in Sources */,
 				BD829D10251317D000499A52 /* ListReposViewCode.swift in Sources */,
 				BD829D0A251316BA00499A52 /* ListReposViewCodeViewController.swift in Sources */,
+				BD564EF1251453B80096EFDE /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD564EE1251451060096EFDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD829CBC25126FAC00499A52 /* TopGithub */;
+			targetProxy = BD564EE0251451060096EFDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BD829CCB25126FB000499A52 /* LaunchScreen.storyboard */ = {
@@ -390,6 +528,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BD564EE2251451060096EFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TJZ8USWMCJ;
+				INFOPLIST_FILE = TopGithubTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = heliotecnologia.com.br.TopGithubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopGithub.app/TopGithub";
+			};
+			name = Debug;
+		};
+		BD564EE3251451060096EFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TJZ8USWMCJ;
+				INFOPLIST_FILE = TopGithubTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = heliotecnologia.com.br.TopGithubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopGithub.app/TopGithub";
+			};
+			name = Release;
+		};
 		BD829CCF25126FB000499A52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -440,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -494,7 +676,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -547,6 +729,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BD564EE4251451060096EFDE /* Build configuration list for PBXNativeTarget "TopGithubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD564EE2251451060096EFDE /* Debug */,
+				BD564EE3251451060096EFDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BD829CB825126FAC00499A52 /* Build configuration list for PBXProject "ConsumerGithub-charllenger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -556,7 +747,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD829CD125126FB000499A52 /* Build configuration list for PBXNativeTarget "ConsumerGithub-charllenger" */ = {
+		BD829CD125126FB000499A52 /* Build configuration list for PBXNativeTarget "TopGithub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD829CD225126FB000499A52 /* Debug */,
