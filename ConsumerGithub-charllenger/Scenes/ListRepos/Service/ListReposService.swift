@@ -23,7 +23,6 @@ final class ListReposService: ListReposServiceProtocol {
         configuration.timeoutIntervalForRequest = 30
         configuration.httpMaximumConnectionsPerHost = 5
         return configuration
-        
     }()
     
     func fetchRepos(pagination: Int, onComplete: @escaping ((Result<[Repo], APIError>) -> Void)) {

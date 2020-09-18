@@ -13,6 +13,7 @@
 		BD564EF1251453B80096EFDE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD564EF0251453B80096EFDE /* APIError.swift */; };
 		BD564EF8251454670096EFDE /* ListReposServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD564EF7251454670096EFDE /* ListReposServiceStub.swift */; };
 		BD564EFE251455080096EFDE /* listReposResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = BD564EFD251455080096EFDE /* listReposResponse.json */; };
+		BD564F0A25145A7B0096EFDE /* ListReposServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD564F0925145A7B0096EFDE /* ListReposServiceTest.swift */; };
 		BD829CC125126FAC00499A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD829CC025126FAC00499A52 /* AppDelegate.swift */; };
 		BD829CCA25126FB000499A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD829CC925126FB000499A52 /* Assets.xcassets */; };
 		BD829CCD25126FB000499A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD829CCB25126FB000499A52 /* LaunchScreen.storyboard */; };
@@ -52,6 +53,7 @@
 		BD564EF0251453B80096EFDE /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		BD564EF7251454670096EFDE /* ListReposServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposServiceStub.swift; sourceTree = "<group>"; };
 		BD564EFD251455080096EFDE /* listReposResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listReposResponse.json; sourceTree = "<group>"; };
+		BD564F0925145A7B0096EFDE /* ListReposServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReposServiceTest.swift; sourceTree = "<group>"; };
 		BD829CBD25126FAC00499A52 /* TopGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD829CC025126FAC00499A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD829CC925126FB000499A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,7 +126,8 @@
 		BD564EE72514510C0096EFDE /* ListRepos */ = {
 			isa = PBXGroup;
 			children = (
-				BD564EE8251451280096EFDE /* ListReposViewModelTest.swift */,
+				BD564F0825145A3B0096EFDE /* Service */,
+				BD564F0725145A220096EFDE /* ViewModel */,
 			);
 			path = ListRepos;
 			sourceTree = "<group>";
@@ -136,6 +139,22 @@
 				BD564EFD251455080096EFDE /* listReposResponse.json */,
 			);
 			path = Stubs;
+			sourceTree = "<group>";
+		};
+		BD564F0725145A220096EFDE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD564EE8251451280096EFDE /* ListReposViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD564F0825145A3B0096EFDE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BD564F0925145A7B0096EFDE /* ListReposServiceTest.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		BD829CB425126FAC00499A52 = {
@@ -454,6 +473,7 @@
 				BD564EE9251451280096EFDE /* ListReposViewModelTest.swift in Sources */,
 				BD564EDE251451060096EFDE /* TopGithubTests.swift in Sources */,
 				BD564EF8251454670096EFDE /* ListReposServiceStub.swift in Sources */,
+				BD564F0A25145A7B0096EFDE /* ListReposServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
