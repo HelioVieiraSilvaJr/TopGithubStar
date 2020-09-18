@@ -8,23 +8,11 @@
 
 import Foundation
 
-enum APIError: Error {
-    case badURL
-    case taskError
-    case noResponse
-    case invalidStatusCode(Int)
-    case noData
-    case invalidJSON
-    
-    var errorMessage: String {
-        switch self {
-        default:
-            return "__fail__"
-        }
-    }
+protocol ListReposServiceProtocol {
+    func fetchRepos(pagination: Int, onComplete: @escaping ((Result<[Repo], APIError>) -> Void))
 }
 
-final class ListReposService {
+final class ListReposService: ListReposServiceProtocol {
     
     private let baseUrl = "https://api.github.com"
     

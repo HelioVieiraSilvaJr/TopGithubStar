@@ -10,13 +10,13 @@ import Foundation
 
 final class ListReposViewModel {
     
-    private let service: ListReposService!
+    private let service: ListReposServiceProtocol!
     private var pagination: Int = 1
     var repos: [Repo] = []
     
     var shouldUpdate: (() -> Void)?
     
-    init(_ service: ListReposService = ListReposService()) {
+    init(_ service: ListReposServiceProtocol = ListReposService()) {
         self.service = service
     }
     
